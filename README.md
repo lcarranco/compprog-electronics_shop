@@ -10,13 +10,13 @@
     - [Constraints](#constraints)
     - [Output Format](#output-format)
     - [Example](#example)
-        - [Samples](#samples)
+    - [Samples](#samples)
         - [Sample Input 0](#sample-input-0)
         - [Sample Output 0](#sample-output-0)
         - [Explanation 0](#explanation-0)
         - [Sample Input 1](#sample-input-1)
         - [Sample Output 1](#sample-output-1)
-    - [Explanation 1](#explanation-1)
+        - [Explanation 1](#explanation-1)
     - [Solving](#solving)
     - [Optimizations](#optimizations)
 
@@ -58,7 +58,7 @@
 * She could purchase **$50 keyboard** and **$8 USB drive** for **$58**
 * Monica chooses the $58 combination due to not being able to buy more than **2** items and can not spend more than **$60**
 
-### Samples
+## Samples
 
 ### Sample Input 0
 ```
@@ -86,7 +86,7 @@ She can buy the second keyboard and third USB drive for total cost of $1 + $8 = 
 ```
 -1
 ```
-## Explanation 1
+### Explanation 1
 There is not way to buy one keyboard and one USB drive because $4 + $5 = $9, print -1 instead
 
 ## Solving
