@@ -18,6 +18,7 @@
         - [Sample Output 1](#sample-output-1)
         - [Explanation 1](#explanation-1)
     - [Solving](#solving)
+        - [Algorithm](#algorithm)
 
 <!-- /TOC -->
 
@@ -92,9 +93,12 @@ There is not way to buy one keyboard and one USB drive because $4 + $5 = $9, pri
 * The problem does not care about each of the prices of keyboards or USB drives
 * Using sets for my data structure
   * A set is a data structure that does not allow duplicates and is ordered
-* The prices of the keyboards and USB drives will be placed in respective sets
-* Will find the maximum of a set and find the minimum of the other set
-* Then will add max and min.
-* If the sum of max and min is less than or equal to the budget, go to next minimum and repeat previous step
-* Algorithm will finish when sum is greater than the budget.
-* Print sum (if it exists) or -1 if sum does not exist
+
+### Algorithm
+1. Insert prices of keyboards and USB drives in respective sets. Only keep prices less than the budget
+2. Find the maximum of keyboards and find the minimum of USB drives
+3. Find sum of max and min.
+4. If sum of max and min is less than or equal to the budget, go to next minimum and repeat previous step
+5. Stop when sum is greater than the budget.
+6. Repeat steps one to five, but find min of keyboards and find max of USB drives
+7. Print maximum of two sums or -1 if sum does not exist

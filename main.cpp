@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+#include <set>
 #include <sstream>
 
 using namespace std;
@@ -10,8 +10,8 @@ int main() {
     int m = 0;
     int value = 0;
     string line;
-    vector<int> keyboards;
-    vector<int> drives;
+    set<int> keyboards;
+    set<int> drives;
 
     cin >> b;
     // cout << b << endl;
@@ -22,15 +22,15 @@ int main() {
     
     for (int i = 0; i < n; ++i) {
         cin >> value;
-        if (value <= b) {
-            keyboards.push_back(value);
+        if (value < b) {
+            keyboards.insert(value);
         }
     }
 
     for (int i = 0; i < m; ++i) {
         cin >> value;
-        if (value <= b) {
-            drives.push_back(value);
+        if (value < b) {
+            drives.insert(value);
         }
     }
 
@@ -40,13 +40,13 @@ int main() {
     }
     
     // cout << "Keyboard prices: ";
-    // for (vector<int>::iterator it = keyboards.begin(); it != keyboards.end(); ++it) {
+    // for (set<int>::iterator it = keyboards.begin(); it != keyboards.end(); ++it) {
     //     cout << *it << ' ';
     // }
     // cout << endl;
 
     // cout << "USB prices: ";
-    // for (vector<int>::iterator it = drives.begin(); it != drives.end(); ++it) {
+    // for (set<int>::iterator it = drives.begin(); it != drives.end(); ++it) {
     //     cout << *it << ' ';
     // }
 
