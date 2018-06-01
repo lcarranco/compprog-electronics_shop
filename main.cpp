@@ -34,7 +34,7 @@ int main() {
         }
     }
 
-    if (keyboards.empty() == false && drives.empty() == false) {
+    if (keyboards.empty() == true && drives.empty() == true) {
         cout << "-1" << endl;
         return 0;
     }
