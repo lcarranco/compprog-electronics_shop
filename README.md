@@ -18,7 +18,6 @@
         - [Sample Output 1](#sample-output-1)
         - [Explanation 1](#explanation-1)
     - [Solving](#solving)
-    - [Optimizations](#optimizations)
 
 <!-- /TOC -->
 
@@ -90,5 +89,12 @@ She can buy the second keyboard and third USB drive for total cost of $1 + $8 = 
 There is not way to buy one keyboard and one USB drive because $4 + $5 = $9, print -1 instead
 
 ## Solving
-
-## Optimizations
+* The problem does not care about each of the prices of keyboards or USB drives
+* Using sets for my data structure
+  * A set is a data structure that does not allow duplicates and is ordered
+* The prices of the keyboards and USB drives will be placed in respective sets
+* Will find the maximum of a set and find the minimum of the other set
+* Then will add max and min.
+* If the sum of max and min is less than or equal to the budget, go to next minimum and repeat previous step
+* Algorithm will finish when sum is greater than the budget.
+* Print sum (if it exists) or -1 if sum does not exist
