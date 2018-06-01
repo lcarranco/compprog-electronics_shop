@@ -10,7 +10,6 @@ int main() {
     int m = 0;
     int value = 0;
     string line;
-    stringstream ss;
     vector<int> keyboards;
     vector<int> drives;
 
@@ -33,6 +32,11 @@ int main() {
         if (value <= b) {
             drives.push_back(value);
         }
+    }
+
+    if (keyboards.empty() == false && drives.empty() == false) {
+        cout << "-1" << endl;
+        return 0;
     }
     
     // cout << "Keyboard prices: ";
