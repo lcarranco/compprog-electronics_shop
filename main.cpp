@@ -23,14 +23,17 @@ int main() {
     
     for (int i = 0; i < n; ++i) {
         cin >> value;
-        keyboards.push_back(value);
+        if (value <= b) {
+            keyboards.push_back(value);
+        }
     }
 
     for (int i = 0; i < m; ++i) {
         cin >> value;
-        drives.push_back(value);
+        if (value <= b) {
+            drives.push_back(value);
+        }
     }
-
     
     // cout << "Keyboard prices: ";
     // for (vector<int>::iterator it = keyboards.begin(); it != keyboards.end(); ++it) {
