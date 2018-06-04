@@ -66,7 +66,7 @@ int main() {
     // cout << "Min: " << min << endl;
     sum1 = max + min;
     // cout << "Sum1: " << sum1 << endl;
-    while (sum1 <= b) {
+    while (sum1 <= b && dit != drives.end()) {
         previous1 = sum1;
         // cout << "Previous1: " << previous1 << endl;
         ++dit;
@@ -85,7 +85,7 @@ int main() {
     // cout << "Min: " << min << endl;
     sum2 = max + min;
     // cout << "Sum2: " << sum2 << endl;
-    while (sum2 <= b) {
+    while (sum2 <= b && kit != keyboards.end()) {
         previous2 = sum2;
         // cout << "Previous2: " << previous2 << endl;
         ++kit;
@@ -98,7 +98,7 @@ int main() {
         cout << previous2 << endl;
         return 0;
     }
-    cout << "-1" << endl;
+    cout << previous1 << endl;
 
     return 0;
 }
