@@ -9,8 +9,12 @@ int main() {
     int n = 0;
     int m = 0;
     int value = 0;
+    int x = 0;
+    int y = 0;
+    int sum = 0;
     unordered_set<int> keyboards;
     unordered_set<int> drives;
+    set<int> sums;
 
     cin >> b;
     // cout << b << endl;
@@ -33,17 +37,29 @@ int main() {
         }
     }
 
-    cout << "Keyboard prices: ";
-    for (unordered_set<int>::iterator it = keyboards.begin(); it != keyboards.end(); ++it) {
-        cout << *it << ' ';
-    }
-    cout << endl;
+    // cout << "Keyboard prices: ";
+    // for (unordered_set<int>::iterator it = keyboards.begin(); it != keyboards.end(); ++it) {
+    //     cout << *it << ' ';
+    // }
+    // cout << endl;
 
-    cout << "USB prices: ";
-    for (unordered_set<int>::iterator it = drives.begin(); it != drives.end(); ++it) {
+    // cout << "USB prices: ";
+    // for (unordered_set<int>::iterator it = drives.begin(); it != drives.end(); ++it) {
+    //     cout << *it << ' ';
+    // }
+    // cout << "\n\n";
+    for (unordered_set<int>:: iterator kit = keyboards.begin(); kit != keyboards.end(); ++kit) {
+        for (unordered_set<int>:: iterator dit = drives.begin(); dit != drives.end(); ++dit) {            
+            sum = *kit + *dit;
+            if (sum <= b) {
+                sums.insert(sum);
+            }
+        }
+    }
+    for (set<int>::iterator it = sums.begin(); it != sums.end(); ++it) {
         cout << *it << ' ';
     }
-    cout << "\n\n";
+    
 
     return 0;
 }
