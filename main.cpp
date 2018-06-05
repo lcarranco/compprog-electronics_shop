@@ -56,10 +56,16 @@ int main() {
             }
         }
     }
-    for (set<int>::iterator it = sums.begin(); it != sums.end(); ++it) {
-        cout << *it << ' ';
+    // for (set<int>::iterator it = sums.begin(); it != sums.end(); ++it) {
+    //     cout << *it << ' ';
+    // }
+
+    if (!sums.empty()) {
+        set<int>::iterator it = --sums.end();
+        cout << *it;
+        return 0;
     }
-    
+    cout << "-1" << endl;
 
     return 0;
 }
