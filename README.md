@@ -91,5 +91,4 @@ There is not way to buy one keyboard and one USB drive because $4 + $5 = $9, pri
 
 ## Solving
 
-
 ### Algorithm
