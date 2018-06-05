@@ -90,5 +90,12 @@ She can buy the second keyboard and third USB drive for total cost of $1 + $8 = 
 There is not way to buy one keyboard and one USB drive because $4 + $5 = $9, print -1 instead
 
 ## Solving
+* Used unordered and ordered sets as my data structures
+	* Set - Does not allow duplicates and is ordered
+	* Unordered Set - Does not allow duplicates and is unordered
 
 ### Algorithm
+* Insert prices of Keyboards and USB drives in respective unordered sets. Only keep prices less than the budget
+* For each keyboard price, compute the sum of each USB drive
+* Insert sum into an ordered set if sum is less than or equal to the budget
+* Print sum if it exist, else print -1
