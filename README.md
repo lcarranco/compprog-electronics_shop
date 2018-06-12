@@ -34,14 +34,14 @@
 	* **n**- # keyboard models
 	* **m** - # USB drive models
 * The second line contains n space-separated integers
-	* **keyboard[i]** - The prices of each keyboard model
+	* **keyboard<sub>n</sub>** - The prices of each keyboard model
 * The third line contains m space-separated integers
-	* **drives[j]** - The prices of each USB drive model
+	* **drives<sub>m</sub>** - The prices of each USB drive model
 
 ## Constraints
-* **1** <= n, m <= **1000**
-* **1** <= b <= **10^6**
-* Price of each item in inclusive range of **[1, 10^6]**
+* **1** &le; n, m &le; **1000**
+* **1** &le; b &le; **10<sup>6</sup>**
+* Price of each item in inclusive range of **[1, 10<sup>6</sup>]**
 
 ## Output Format
 * Print integer denoting amount of money Monica will spend
