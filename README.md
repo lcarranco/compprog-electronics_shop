@@ -39,8 +39,8 @@
 	* **drives<sub>m</sub>** - The prices of each USB drive model
 
 ## Constraints
-* **1** &le; n, m &le; **1000**
-* **1** &le; b &le; **10<sup>6</sup>**
+* **1 &le; n, m &le; 1000**
+* **1 &le; b &le; 10<sup>6</sup>**
 * Price of each item in inclusive range of **[1, 10<sup>6</sup>]**
 
 ## Output Format
